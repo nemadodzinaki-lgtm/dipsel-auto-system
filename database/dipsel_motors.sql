@@ -768,7 +768,7 @@ CREATE TABLE `settings` (
 
 INSERT INTO `settings` (`id`, `setting_key`, `setting_value`) VALUES
 (1, 'company_name', 'Dipsel Auto'),
-(2, 'logo_path', 'uploads/logos/logo_1785326419.png'),
+(2, 'logo_path', 'assets/dipsel-auto-mark.svg'),
 (3, 'footer_about', 'Your trusted partner in buying and selling quality used cars.'),
 (4, 'footer_email', 'Dipselmotors@outlook.com'),
 (5, 'footer_phone', '+27 73 913 1020'),

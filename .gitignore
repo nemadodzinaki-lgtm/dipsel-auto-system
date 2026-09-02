@@ -1,6 +1,7 @@
 # Environment / secrets
 .env
 .env.*
+!.env.example
 
 # PHP dependencies
 /vendor/
@@ -22,3 +23,6 @@ Desktop.ini
 # Uploaded files
 /uploads/*
 !/uploads/.gitkeep
+
+# Local container data
+/data/

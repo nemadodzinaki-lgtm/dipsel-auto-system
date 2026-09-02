@@ -1,0 +1,16 @@
+{
+    email admin@dipselauto.co.za
+}
+
+dipselauto.co.za, www.dipselauto.co.za {
+    encode zstd gzip
+
+    header {
+        -Server
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    reverse_proxy web:80
+}

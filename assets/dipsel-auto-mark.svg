@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Dipsel Auto</title>
+  <desc id="desc">A teal car silhouette and letter D on a navy background.</desc>
+  <rect width="512" height="512" rx="112" fill="#0b1a2e"/>
+  <path d="M112 285h288l-25-75c-7-21-27-35-49-35H186c-22 0-42 14-49 35l-25 75Z" fill="none" stroke="#2dd4bf" stroke-width="28" stroke-linejoin="round"/>
+  <path d="M91 285h330c18 0 33 15 33 33v50H58v-50c0-18 15-33 33-33Z" fill="#2dd4bf"/>
+  <circle cx="145" cy="368" r="38" fill="#f8fafc" stroke="#0b1a2e" stroke-width="18"/>
+  <circle cx="367" cy="368" r="38" fill="#f8fafc" stroke="#0b1a2e" stroke-width="18"/>
+  <path d="M198 125h62c61 0 104 34 104 83s-43 83-104 83h-62V125Zm58 126c36 0 58-16 58-43s-22-43-58-43h-10v86h10Z" fill="#f8fafc"/>
+</svg>

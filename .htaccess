@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Application internals must never be served over HTTP.
+RewriteRule ^(?:config|database|vendor)(?:/|$) - [F,L,NC]
+
+<FilesMatch "(^\.|^Dockerfile$|^compose\.ya?ml$|^composer\.(json|lock)$|\.(?:env|ini|log|lock|sql|ya?ml)$)">
+    Require all denied
+</FilesMatch>
+
+# Old diagnostics and duplicate legacy entry points are not production routes.
+<FilesMatch "^(?:generate_password|indexOld|loginOld|registerOld|test|test_auth)\.php$">
+    Require all denied
+</FilesMatch>

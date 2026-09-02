@@ -31,13 +31,20 @@ try {
 
 declare(strict_types=1);
 
-$host     = '127.0.0.1';
-$database = 'dipsel_motors';
-$username = 'root';
-$password = '';
-$charset  = 'utf8mb4';
+$readEnv = static function (string $name, string $default = ''): string {
+    $value = getenv($name);
 
-$dsn = "mysql:host={$host};dbname={$database};charset={$charset}";
+    return $value === false ? $default : $value;
+};
+
+$host     = $readEnv('DB_HOST', '127.0.0.1');
+$port     = $readEnv('DB_PORT', '3306');
+$database = $readEnv('DB_NAME', 'dipsel_motors');
+$username = $readEnv('DB_USER', 'root');
+$password = $readEnv('DB_PASSWORD');
+$charset  = $readEnv('DB_CHARSET', 'utf8mb4');
+
+$dsn = "mysql:host={$host};port={$port};dbname={$database};charset={$charset}";
 
 $options = [
 
